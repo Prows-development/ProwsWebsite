@@ -1,0 +1,87 @@
+{% load static tailwind_tags %}
+
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{% block title %}{% endblock %}</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+            
+            {% tailwind_css %}
+
+        </head>
+
+        <body>
+            <div class="base">
+
+                {% include "layouts/navbar_notion.html" %}
+                
+                {% block content %}
+                {% endblock %}
+
+                {% include "layouts/testimonials.html" %}
+                {% include "layouts/footer.html" %}
+
+            </div>
+
+            <script src="{% static '/js/index.js' %}"></script>
+            <script src="{% static 'https://code-jquery.com/jquery-3.5.1.min.js' %}"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="path/to/particles.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            <script>
+                window.onload = function(){
+                    document.getElementById("autoplay").play();
+                }
+            </script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+              
+                const swiper = new Swiper(...)
+            </script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 32,
+                    loop: true,
+                    centeredSlides: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+            
+                    },
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    breakpoints: {
+                    640: {
+                      slidesPerView: 1,
+                      spaceBetween: 32,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 32,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 32,
+                    },
+                  },
+                });
+            </script>
+            
+            
+            
+        </body>
+    </html>
+</DOCTYPE>

@@ -1,0 +1,222 @@
+@tailwind base;
+
+.portfolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  text-align: center;
+}
+.portfolio .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.img-port{
+  width: 360px;
+  height: 600px;
+  background-size: cover;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  
+}
+.img-port:hover{
+  background-position: 100% 100%;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(113, 113, 113);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600px;
+  color: rgb(22, 21, 21);
+  opacity: 0;
+  transition: 8s;
+}
+.overlay:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 375px) {
+  .portfolio .flex{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .img-port{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .portfolio .flex{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .img-port{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .portfolio .flex{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .img-port{
+    height: 250px;
+  }
+}
+  
+@media screen and (max-width: 745px) {
+  .portfolio .flex{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .img-port{
+    height: 350px;
+  }
+}
+/*
+.gallery-top .swiper-slide {
+  height: fit-content;
+  margin-right: 0px;
+}
+.swiper-wrapper{  
+
+}
+.gallery-top .swiper-slide-active {
+transform: scale(1.1);
+}      
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+content: ' ';
+}
+.swiper-button-next svg, .swiper-button-prev svg{
+width: 20px;
+height: 20px;
+}
+.swiper-button-next, .swiper-button-prev{
+
+margin-top: 1px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+left: auto;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+right: 10;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+bottom: var(--swiper-pagination-bottom,px);
+z-index: 10;
+color: transparent;
+left: 14px;
+}
+.swiper-pagination-current{
+color: black;
+}
+.gallery-top .swiper-slide .swiper-box {
+opacity: 0;
+transform: scale(1);
+}
+.gallery-top .swiper-slide-active .swiper-box {
+transform: scale(0.9);
+opacity: 1;
+}
+@media (max-width: 1920px){
+.gallery-top .swiper-slide-active .swiper-box{
+opacity: 1;
+}
+} 
+*/
+
+/* Notion Portfolio */
+.portfolio_notion{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  text-align: center;
+}
+.portfolio_notion .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.img-port-notion{
+  width: 950px;
+  height: 650px;
+  background-size: cover;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  
+}
+.img-port-notion:hover{
+  background-position: 100% 100%;
+}
+.overlay-notion{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(113, 113, 113);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600px;
+  color: rgb(22, 21, 21);
+  opacity: 0;
+  transition: 8s;
+}
+.overlay-notion:hover{
+  opacity: 1;
+}
+
+/* TESTIMONIALS */
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 4px !important;
+    border-radius: 5px !important;
+    margin: 0 6px !important;
+}
+
+.swiper-pagination {
+    bottom: 2px !important;
+}
+
+.swiper-wrapper {
+    height: max-content !important;
+    width: max-content !important;
+    padding-bottom: 64px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #4F46E5 !important;
+}
+
+.swiper-slide.swiper-slide-active>.slide_active\:border-indigo-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.swiper-slide.swiper-slide-active>.group .slide_active\:text-gray-800 {
+    ---tw-text-opacity: 1;
+    color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+
+@tailwind components;
+@tailwind utilities;
