@@ -16,13 +16,13 @@ tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 
 [[package]]
 name = "django"
-version = "5.1.5"
+version = "5.1.6"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "Django-5.1.5-py3-none-any.whl", hash = "sha256:c46eb936111fffe6ec4bc9930035524a8be98ec2f74d8a0ff351226a3e52f459"},
-    {file = "Django-5.1.5.tar.gz", hash = "sha256:19bbca786df50b9eca23cee79d495facf55c8f5c54c529d9bf1fe7b5ea086af3"},
+    {file = "Django-5.1.6-py3-none-any.whl", hash = "sha256:8d203400bc2952fbfb287c2bbda630297d654920c72a73cc82a9ad7926feaad5"},
+    {file = "Django-5.1.6.tar.gz", hash = "sha256:1e39eafdd1b185e761d9fab7a9f0b9fa00af1b37b25ad980a8aa0dac13535690"},
 ]
 
 [package.dependencies]
@@ -33,6 +33,23 @@ tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 [package.extras]
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
+
+[[package]]
+name = "django-tailwind"
+version = "3.8.0"
+description = "Tailwind CSS Framework for Django projects"
+optional = false
+python-versions = ">=3.10.0,<4.0.0"
+files = [
+    {file = "django_tailwind-3.8.0-py3-none-any.whl", hash = "sha256:fa969c5b95d314b173fe2b2ed2cb2c03f2e2c94fdc2c01ff73a993fa159085da"},
+    {file = "django_tailwind-3.8.0.tar.gz", hash = "sha256:31c2f4a7879d685c2de0feaf0b63f246200b37337bea4d7dbafb59bc3f10c008"},
+]
+
+[package.dependencies]
+django = ">=3.2.14"
+
+[package.extras]
+reload = ["django-browser-reload (>=1.12.1,<2.0.0)"]
 
 [[package]]
 name = "sqlparse"
@@ -63,4 +80,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "aad64af9a6472f5c88c62eca0ce529b70f837bd7eae9492ea1f7202c93529639"
+content-hash = "6aca7853b0daf0908b21056c225c47194c8476f7cd60118b7d02bc181dd7f332"
