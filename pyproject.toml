@@ -12,6 +12,7 @@ django-tailwind = "^3.8.0"
 gunicorn = "^23.0.0"
 django-browser-reload = "^1.18.0"
 uvicorn = "^0.34.0"
+whitenoise = "^6.9.0"
 
 
 [build-system]
