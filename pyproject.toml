@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 django = "^5.1.5"
 django-tailwind = "^3.8.0"
+gunicorn = "^23.0.0"
+django-browser-reload = "^1.18.0"
 
 
 [build-system]
